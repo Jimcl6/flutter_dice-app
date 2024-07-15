@@ -14,17 +14,18 @@ class MyApp extends StatelessWidget {
         child: Container(
           decoration: BoxDecoration(
               gradient: LinearGradient(
-                  begin: Alignment.topLeft,
-                  end: Alignment.bottomRight,
+                  begin: Alignment.bottomRight,
+                  end: Alignment.topLeft,
                   colors: [
+                Colors.tealAccent.shade400,
+                Colors.purple.shade300,
                 Colors.deepPurple.shade900,
-                Colors.purple.shade700
               ])),
           child: Scaffold(
             bottomNavigationBar: const BottomAppBarArea(),
             backgroundColor: Colors.transparent,
             appBar: AppBar(
-              backgroundColor: Colors.deepPurple.shade800,
+              backgroundColor: Colors.transparent,
               title: Center(
                 child: Text(
                   'Dicee'.toUpperCase(),
